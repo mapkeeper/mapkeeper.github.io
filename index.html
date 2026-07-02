@@ -2,10 +2,213 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Mapkeeper 웹사이트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapkeeper (맵지기 AI) - 소상공인을 위한 통합 구글 비즈니스 솔루션</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8; /* 구글 공식 블루 */
+            --text-dark: #202124;
+            --text-light: #5f6368;
+            --border-color: #dadce0;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        header {
+            padding: 24px 8%;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 8% 60px 8%;
+            max-width: 900px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            color: var(--text-light);
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px 8% 80px 8%;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--text-dark);
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px 60px;
+        }
+
+        .card {
+            background: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        /* Compliance */
+        .compliance {
+            background-color: var(--bg-light);
+            padding: 60px 8%;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .compliance h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .compliance p {
+            font-size: 14px;
+            color: var(--text-light);
+            max-width: 800px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 8%;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-light);
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            footer {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .footer-links a {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Mapkeeper 웹사이트를 준비중입니다.</h1>
-    <p>현재 페이지는 아직 수정 중입니다.</p>
+
+    <header>
+        <div class="logo">Mapkeeper <span>AI</span></div>
+    </header>
+
+    <section class="hero">
+        <span class="badge">Google Business Profile API Verification Project</span>
+        <h1>디지털 취약계층 소상공인을 위한<br>VUI 및 비전 AI 기반 구글 맵 관리 솔루션</h1>
+        <p>Mapkeeper는 모바일 환경 및 플랫폼 관리에 어려움을 겪는 5060 골목상권 판매자분들을 위해 직관적인 음성 인터페이스(VUI)와 비전 인공지능 기술을 결합하여, 방치되기 쉬운 구글 비즈니스 프로필을 지능적으로 보호하고 동기화하는 검증 프로젝트입니다.</p>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">주요 기능 및 핵심 연동 범위</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. VUI 연동 특별 영업시간 설정</h3>
+                <p>복잡한 시스템 조작 없이 스마트폰 음성 입력을 통해 명절, 공휴일 등 매장의 특수 영업 일정을 직관적으로 구글 지도 서버에 실시간 동기화합니다.</p>
+            </div>
+            <div class="card">
+                <h3>2. 긴급 임시 휴업 원터치 제어</h3>
+                <p>건물 내부 공사, 갑작스러운 개인 사정 등 매장을 긴급하게 닫아야 할 때 모바일 인터페이스의 직관적인 토글 작동으로 즉각 구글 지도에 임시 휴업 상태를 반영합니다.</p>
+            </div>
+            <div class="card">
+                <h3>3. 비전 및 LLM 매장 소개 최적화</h3>
+                <p>매장 내 주요 텍스트를 비전 기술로 인식하여, 구글 지도 내의 비어있는 가게 소개란([정보] 탭)을 구글 Gemini AI를 통해 검색 최적화(SEO) 문장으로 자동 가공 및 업데이트합니다.</p>
+            </div>
+            <div class="card">
+                <h3>4. 글로벌 리뷰 인사이트 마이닝</h3>
+                <p>다국어로 축적되는 구글 맵 특유의 외국인 관광객 피드백 데이터를 통합 스크랩하여, 거대언어모델(LLM)을 기반으로 소상공인에게 유의미한 한글 요약 리포트를 생성합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="compliance">
+        <h2>데이터 보안 및 API 규정 준수</h2>
+        <p>본 애플리케이션은 Google 비즈니스 프로필 API 가이드라인과 OAuth 2.0 보안 프로토콜을 전적으로 준수합니다. 소상공인 파트너의 매장 제어 권한 토큰은 암호화되어 안전하게 관리되며, 사용자의 사전 동의 범위 내에서 오직 구글 지도 정보 갱신 및 리뷰 데이터 요약 목적으로만 호출됩니다.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Mapkeeper AI Team. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
 </body>
 </html>
